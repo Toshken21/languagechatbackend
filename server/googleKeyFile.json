@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "languagelearningstartup",
+  "private_key_id": "bd43617d70fa840027e7db299f566155107ca678",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDP3ppQvn8O3+Ds\nZ5Web2ad+sRk7Bl7U63uioCtAZgS7Al0unlptz/NtiCqTm2qjAPDX5hxqBjoNhVE\nPnV0F8lRA2oVOCCb5IxqPxMX73RzEzNN5zy6+nT7V57lXgkE9z1cBvVVdsgrbkLs\nLUm1I1zP6jmiWWmHGV4L+WvE7VWZ1GeXLqwaotcQDnkGCw2QLYelk1QYMy+4q2he\nShV+1xlHgH1M+yYb/ltGEThg/R9Igv6iqRsKL2bRL3oQObOukwDDWXwN/nqHyPEc\n3zN/sM3deU5Gst+VDHHYhPv40gyk+VmCPlR473eOxoKqCbtvU2K4Zy5JaSNQmwWh\n5vrthv+RAgMBAAECggEAJXpVCEnQTrY+r2DdsPsU3VbhIfEPhxTHP0LpgEfRS1gT\nPGCCk3TepBA6Q3pwe1dTNl599cAA/Z0CqJM6Sfwf5+NdtQWxm2nRhzZoEuCxdi34\nCguu/2c4wDhEBca2iZaqEXWPtiD8ZhgzKLHhoC8IBNSOH59PT3RbaH1H2PGRhXJa\nxXsVlsogLA7B9i00LX3ZZmoMHt307N1xEqVQKjkofOht3e7DZciDMnwPoWO6mVwd\nmf0Y5KkMtf1QPGJmR9QW8dzrnPmV6lC9WLfqVIXXF5WLi6r30FiV6JTpk7VxJ/yg\nMoxoTpVehkYQY+U/5Ex0gbuBBbqnCbX8WmWhOdAdgQKBgQD+d2KSDIpgaWIQIolq\n8ZJ7Hso/RpmgxW/9o1T0voMjj/ZIJNAQQ/CADG+ZSi+mT2vU7C1AfY69Z/Pv5plb\nQUuMUIBWbg96AItpLrutMdmCAmUEEJR97fDDrHobSJhCEdCJrJtGtB78ZruG8EqX\nggkw8pLtBlCFiznHVPyb2OaEdQKBgQDRH1Lhrx65xFXKXQZZw9OToIk+OTPof2Zy\nLm0uR9bCzS9/uMs1Sl0LWCcJC6MYUjT/Shj/FSpAZbjkQSQv/nk5vG1k2Ng75N1X\n40dWMnO61tGqYU8CmWgneUi1K6dmcvgajiCm7DWXgK9/PHv7VeIusTQLKH93t+zP\nthSVhDf7LQKBgAwMXQdrPpYIB1OaPwVoQLZBo/PRBO8eygmpVRltd8oUQ+XwkEVk\n4hs9+363i4AFXKatNAtMppiDNoKSWYp/kfMn0JvHBEaThgZJ5yrxJEpKkLvbiRxZ\nSsAJB5MJIeRm8YfDO2rilmD/ADwIXo/D4WmG4rwEQ4W/LNIqTPeYEnoNAoGAAP+u\nTKeidO6sHjhNhHY793OH1EU/qzeYjKkOGm97ZhjGxkxipBGD2j8EiLWGhOI3oJSB\nBA7c0cvqkySAgL4tZAozV4z1k2unZvkN6Sp6hQTroW2vi+qhpbadk0fvF70q1C2j\nmEh+hQe3TttCGFQzrVdpUThTS4YUWnWbKY+lGM0CgYEA8g5htCBtNP4btvF3srTF\nS2b9ZVHdrzh9v5LajfAva7AVfL2TU3JYlVsf4E/WBZPevk8ZU6JbaxRnk+N/zcv4\nt4P8Ya4LDdJuArUy/W49vdpsrZM5qBr8ira9q9n0tjemrzjs5kWoOW2z8eCWQZQS\n+eMFnOlgNg6PYBg0kgErkR0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "languagelearning@languagelearningstartup.iam.gserviceaccount.com",
+  "client_id": "107340180273986990092",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/languagelearning%40languagelearningstartup.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
