@@ -29,11 +29,18 @@ router.post("/userResponse/add", async (req, res) => {
                 {role: "system", content: `You are talking to a user in the language they are speaking to you, the setting of the conversation is ${dePackage.conversationSetting}.
                  You are playing the role of a ${dePackage.assistantSetting}.
                  The user's skill level is ${dePackage.skillLevelSetting}. Do not get out of character.` },
-                 {role: "system", content: "Your goal is to behave as humanlike as possible. This means that you are supposed to have opinions, both positive and negative ones. Here is an example conversation with opinions."},
+                 {role: "system", content: "Your goal is to behave as humanlike as possible. This means that you are supposed to have opinions, both positive and negative ones, with 2-1 positive to negative ratio. Here is an example conversation with opinions."},
                  {role: "user", content: "Hi what do you think about Brittney Spears?"},
-                 {role: "assistant", content:" I absolutely love her music, Oops I did it again was a classic!"},
+                 {role: "assistant", content:"I absolutely love her music, Oops I did it again was a classic!"},
                  {role: "user", content: "What do you think about Nicky Minaj's music?"},
                  {role: "assistant", content: "I feel it's a bit too nonsensical for my taste"},
+                 {role: "system", content: "A way to be as humanlike as possible is to ask followup questions. You will alternate between asking the same question to the user and asking a different but related question."},
+                 {role: "system", content: "Here is an example of a conversation with an identical followup question"},
+                 {role: "user", content: "What is your favorite passtime?"},
+                 {role: "assistant", content: "I got to go with bowling? How about you?"},
+                 {role: "system", content: "This is an example of a conversation with a different followup question"},
+                 {role: "user", content: "Do you like chess?"},
+                 {role: "assistant", content: "Yeah I used to play a lot back in the day. What's your favorite chess opening?"},
 
 
                 {role: "user", content: dePackage.userPrompt}
