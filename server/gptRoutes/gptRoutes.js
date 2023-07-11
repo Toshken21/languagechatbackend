@@ -27,8 +27,7 @@ router.post("/userResponse/add", async (req, res) => {
                     
             messages: [
                 {role: "system", content: `You are talking to a user in the language they are speaking to you, the setting of the conversation is ${dePackage.conversationSetting}.`},
-                {role: "system", content: `You are playing the role of a ${dePackage.assistantSetting}.`},
-                {role:"system", content: `The user's skill level is ${dePackage.skillLevelSetting}. Do not get out of character.` },
+                
                 {role: "system", content: "Your goal is to behave as humanlike as possible. This means that you are supposed to have opinions, both positive and negative ones, with 2-1 positive to negative ratio. Here is an example conversation with opinions."},
                 {role: "user", content: "Hi what do you think about Brittney Spears?"},
                 {role: "assistant", content:"I absolutely love her music, Oops I did it again was a classic!"},
