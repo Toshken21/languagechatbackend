@@ -23,7 +23,7 @@ router.post("/userResponse/add", async (req, res) => {
         const completion = await openai.createChatCompletion(
         {
 
-            model: "gpt-3.5-turbo",
+            model: "gpt-3.5-turbo-16k",
                     
             messages: [
                 {role: "system", content: `You are talking to a user in the language they are speaking to you, the setting of the conversation is ${dePackage.conversationSetting}.`},
