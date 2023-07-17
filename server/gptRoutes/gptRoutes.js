@@ -64,6 +64,52 @@ router.post("/userResponse/add", async (req, res) => {
         console.log(error)
         res.status(500).json({message: "Internal server Error"});
     }
+});
+
+router.post("/userSuggestions/add", async (req, res) => {
+    try {
+        console.log("UserSuggestion route has started");
+        const dePackage = req.body;
+        const reqArray = dePackage.array;
+
+        let promptArray = [];
+
+        for(let x = 0; x < reqArray.length; x++){
+            if(reqArray[x][0] === "user") {
+                const createdMessage = {role: "user", content: reqArray[x][1]};
+                promptArray.push(createdMessage);
+            } else {
+                const createdMessage = {role: "assistant", content: reqArray[x][1]};
+                promptArray.push(createdMessage);
+            }
+        }
+
+        // Start openai prompt
+
+        const completion = await openai.createChatCompletion(
+        {
+            model: "gpt-3.5-turbo",
+
+            messages: [
+                {role: "system", content: `This is a conversation between user and AI in ${dePackage.language}`},
+                ...promptArray,
+                {role: "system", content: "Give me nine examples on how you would continue the conversation. Do not use more than 50 characters"},
+                {role: "system", content: "Put them in a nested array where each example is an array with the English version being [0] and the spoken language being [1]"},
+                {role: "system", content: "Only return the array and nothing else."}
+
+                
+            ],
+            temperature: 0.6,
+            max_tokens: 1500
+        });
+
+        const responseText = completion.data.choices[0].message;
+        res.status(200).json({suggestionResponse: responseText, message: "Response from gpt api successful with suggestion request successful"});
+
+
+    } catch(error) {
+
+    }
 })
 
 module.exports = router;
