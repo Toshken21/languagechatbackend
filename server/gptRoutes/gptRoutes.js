@@ -104,6 +104,7 @@ router.post("/userSuggestions/add", async (req, res) => {
         });
 
         const responseText = completion.data.choices[0].message;
+        console.log(responseText);
         res.status(200).json({suggestionResponse: responseText, message: "Response from gpt api successful with suggestion request successful"});
 
 
