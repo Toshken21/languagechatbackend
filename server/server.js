@@ -4,6 +4,7 @@ const express = require('express');
 
 const app = express();
 app.use(cors());
+
 app.use(express.json());
 const googleSpeechRoutes = require("./languageRoutes/googleSpeech");
 const gptRoutes = require("./gptRoutes/gptRoutes");

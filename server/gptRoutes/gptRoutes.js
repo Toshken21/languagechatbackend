@@ -19,7 +19,7 @@ router.post("/userResponse/add", async (req, res) => {
         
         console.log(dePackage.userPrompt);
 
-            
+        
         const completion = await openai.createChatCompletion(
         {
 
@@ -95,6 +95,7 @@ router.post("/userSuggestions/add", async (req, res) => {
                 ...promptArray,
                 {role: "system", content: "Give me three examples on how you would continue the conversation as the user. Do not use more than 300 characters"},
                 {role: "system", content: "Put them in a nested array where each example is an array with the English version being [0] and the spoken language being [1]"},
+                {role: "system", content: "only use '' inside of the array"},
                 {role: "system", content: "Only return the array and nothing else."}
 
                 
